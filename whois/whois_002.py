@@ -1,0 +1,24 @@
+#! /usr/bin/python
+
+import whois
+
+target = "google.com"
+
+querywhois = whois.query(target)
+
+print("Name: "+querywhois.name)
+
+print(querywhois.creation_date)
+
+print(querywhois.expiration_date)
+
+print(querywhois.last_updated)
+
+print(querywhois.registrar)
+
+print(" ")
+
+print("Domínios DNS:")
+for _domain in querywhois.name_servers:
+    print(_domain)
+
