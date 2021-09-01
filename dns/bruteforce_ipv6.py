@@ -7,8 +7,7 @@ def func_aaaa(_target):
     question = myquery.query(_target, 'AAAA')
 
     for _addr in question:
-        print(_addr)
-        #print('[+] - ' + _target + ' ----> ' + str(_addr))
+        print('[+] - ' + _target + ' ----> ' + str(_addr))
 
 def bruteforce_dns_ipv6(_wordlist):
     with open(_wordlist,'r') as machines:
